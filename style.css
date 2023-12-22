@@ -31,6 +31,9 @@ body{
     height:50px;
     width: 50px;;
     background-color:rgb(107, 222, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .element{
     display: flex;
@@ -52,7 +55,7 @@ body{
     margin: 10px 10px;
 
 }
-#bubble{
+.bubble{
     height: 30px;
     width: 30px;
     background-color: green;
@@ -66,9 +69,10 @@ body{
     
 }
 
-#bubble:hover{
+.bubble:hover{
 
     background-color: red;
     transform: scale(0.5) rotate(360deg);
+    
 }
 

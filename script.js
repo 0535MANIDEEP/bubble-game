@@ -1,17 +1,22 @@
 let clutter= "";
-let score=0
+let totalscore=0;
+
 for(let i=1;i<=300;i++)
 {
     let num=Math.floor(Math.random()*10);
     console.log(num)
-    clutter +=`<div id=bubble onClick="points(1)">${num}</div>`;
+    clutter +=`<div class=bubble id="manideep+${i}"onClick="points(${num},${i})">${num}</div>`;
     
 }
+
 document.querySelector(".bottom-part").innerHTML=clutter;
-document.getElementById("bubble").addEventListener("click",points);
 
-function points(one){
-    score+=one;
+function points(sum,index)
+{
+    let x=`manideep+${index}`;
+    totalscore+=sum;
+    
+    document.getElementById("totalscore").innerHTML=totalscore;
+    document.getElementById(x).innerHTML=0;
+
 }
-
-console.log(score);
