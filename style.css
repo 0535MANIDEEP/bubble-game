@@ -11,7 +11,7 @@ body{
 }
 
 .panel{
-    height:450px;
+    height: 470px;
     width:100%;
     background-color: #fff;
     border-radius: 10px;
@@ -61,6 +61,12 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 1000;
+    transition: 0.3s;
     
-    
+}
+
+#bubble:hover{
+
+    background-color: red;
+    transform: scale(0.5) rotate(360deg);
 }
