@@ -18,5 +18,5 @@ function points(sum,index)
     
     document.getElementById("totalscore").innerHTML=totalscore;
     document.getElementById(x).innerHTML=0;
-
+    document.getElementById(x).style.scale="0";
 }
