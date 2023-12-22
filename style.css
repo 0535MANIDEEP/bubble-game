@@ -8,11 +8,14 @@
 body{
     background-color: rgb(26, 69, 38);
     padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .panel{
-    height: 470px;
-    width:100%;
+    height:50%;
+    width:60%;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;

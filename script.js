@@ -1,7 +1,8 @@
 let clutter= "";
 let totalscore=0;
 
-for(let i=1;i<=300;i++)
+let n=Math.floor(Math.random()*400);
+for(let i=1;i<=n&&i<1000;i++)
 {
     let num=Math.floor(Math.random()*10);
     console.log(num)
